@@ -10,11 +10,11 @@ body {
   margin: 100px;
 }
 
-#logo {
+/* #logo {
 }
 
 #contact-box {
-}
+} */
 
 #contact {
   display: block;
@@ -92,8 +92,8 @@ a:hover {
   margin-bottom: 100px;
 }
 
-#projects-box {
-}
+/* #projects-box {
+} */
 
 #projects-text,
 #skills {
