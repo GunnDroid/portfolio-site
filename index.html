@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gunndroid Programming</title>
-    <script src="/portfolio-site/script.js" async></script>
-    <link rel="stylesheet" type="text/css" href="/portfolio-site/style.css" />
+    <link rel="stylesheet" href="/portfolio-site/css/style.css" />
+    <link rel="stylesheet" href="/portfolio-site/css/wavesstyle.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,49 +16,39 @@
     />
   </head>
   <body>
-    <!-- <div class="console-container">
-      <span id="text"></span>
-      <div class="console-underscore" id="console">&#95;</div>
-    </div>
-  -->
     <section id="header"></section>
-
+    <p id="headText">welcome to my portfolio</p>
     <section id="about-section">
       <div id="about-div">
         <h2>Who is Gunndroid?</h2>
         <p id="about">
-          Gunndroid is a programmer from America. He stumbled into the world of
-          writing code through his desire to understand Ethereum Smart
-          Contracts.
+          Gunndroid is a programmer from the Land of the Free. He stumbled into
+          the abyss of writing code through his desire to understand Ethereum
+          Smart Contracts.
           <br />
           <br />
-          He's spent the past year starting from the ground up. Learning HTML,
-          CSS, Javascript, GIT and more. After completing various intermediate
-          online courses, he's ready to contribute to the programming world.
+          Earlier this year he arrived at the base of the programming mountain,
+          looked up and began to climb. The steps of HTML, CSS, Javascript, GIT
+          and others were thoroughly approached. After completing various
+          intermediate online courses, he's ready to meet at base camp and
+          contribute to the programming world.
           <br />
-          <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem dicta dolore sapiente, natus beatae quos, corporis,
-          consequatur perspiciatis laboriosam veniam repellat sequi illum quis
-          molestias ratione quas temporibus. Neque odio modi asperiores!
-
           <br />
         </p>
       </div>
 
       <div id="contact-box">
         <img
-          src="/portfolio-site/images/IMG_0121.jpeg"
-          alt="This is a portrait of Gunnar"
           id="portrait"
+          src="/portfolio-site/images/IMG_0121.jpeg"
+          onmouseover="this.src='/portfolio-site/images/qr.png'"
+          onmouseout="this.src='/portfolio-site/images/IMG_0121.jpeg'"
+          alt="This is a portrait of Gunnar and QR code."
         />
-        <img src="/portfolio-site/images/qr.png" alt="qr code for instagram" />
-        <a
-          id="contact"
-          href="mailto: glukari@protonmail.com"
-          style="margin: 5px"
-          >contact</a
-        >
+
+        <!-- contact email link -->
+        <a id="contact" href="mailto: glukari@protonmail.com">contact</a>
+        <a id="resume" href="/Gunndroid-resume.pdf" target="_blank">resume</a>
       </div>
     </section>
 
@@ -72,13 +62,9 @@
             href="https://gunndroid.github.io/Human-to-Whale-Talk/"
             target="_blank"
           >
-            <img
-              class="project-images"
-              src="/portfolio-site/images/whale.png"
-              width="400px"
-              height="200px"
+            <img class="project-images" src="/portfolio-site/images/whale.png"
           /></a>
-          <p style="width: 400px">
+          <p class="project-desc">
             This app will translate English into Whale Speech.
           </p>
         </div>
@@ -88,13 +74,9 @@
           <a
             href="https://gunndroid.github.io/sleepDebtCalculator/"
             target="_blank"
-            ><img
-              class="project-images"
-              src="/portfolio-site/images/sleep.png"
-              width="400px"
-              height="200px"
+            ><img class="project-images" src="/portfolio-site/images/sleep.png"
           /></a>
-          <p style="width: 400px">
+          <p class="project-desc">
             This will calculate if you need more sleep each week.
           </p>
         </div>
@@ -105,31 +87,110 @@
             ><img
               class="project-images"
               src="/portfolio-site/images/puffwizz.png"
-              width="400px"
-              height="200px"
           /></a>
-          <p style="width: 400px">
+          <p class="project-desc">
             This is the NFT project that started my coding journey.
+            <i>(in progress)</i>
           </p>
         </div>
       </div>
     </section>
 
     <section id="skills-section">
-      <!-- <h3 id="skills">Skills</h3> -->
+      <h3 id="skills">Skills</h3>
       <div id="icons">
-        <img src="/portfolio-site/images/icons/html3.png" alt="html icon" />
-        <img src="/portfolio-site/images/icons/css4.png" alt="css icon" />
-        <img src="/portfolio-site/images/icons/js.png" alt="js icon" />
-        <img src="/portfolio-site/images/icons/vscode.png" alt="vscode icon" />
-        <img src="/portfolio-site/images/icons/git.png" alt="git icon" />
-        <img src="/portfolio-site/images/icons/github.png" alt="github icon" />
-        <img src="/portfolio-site/images/icons/node.png" alt="node icon" />
+        <img src="/portfolio-site/images/icons/vscode.png" alt="" />
+
+        <img src="/portfolio-site/images/icons/html3.png" />
+        <img src="/portfolio-site/images/icons/css4.png" alt="" />
+        <img src="/portfolio-site/images/icons/js.png" alt="" />
+        <img src="/portfolio-site/images/icons/node.png" alt="" />
+
+        <img src="/portfolio-site/images/icons/git.png" alt="" />
+        <img src="/portfolio-site/images/icons/github.png" alt="" />
       </div>
     </section>
 
-    <section id="footer">
-      <!-- <p>Made with in Chicago</p> -->
-    </section>
+    <!--Waves Container-->
+    <div id="wavesDiv">
+      <svg
+        class="waves"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+        shape-rendering="auto"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+          />
+        </defs>
+        <g class="parallax">
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="0"
+            fill="rgba(0,100,250,0.4)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="3"
+            fill="rgba(30,0,200,0.3)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="5"
+            fill="rgba(100,0,200,0.4)"
+          />
+        </g>
+      </svg>
+    </div>
+    <!--Waves end-->
+
+    <!--Waves Container 2-->
+    <div id="wavesDiv2">
+      <svg
+        class="waves2"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+        shape-rendering="auto"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+          />
+        </defs>
+        <g class="parallax">
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="0"
+            fill="rgba(0,100,250,0.3)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="3"
+            fill="rgba(100,0,200,0.4)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="5"
+            fill="rgba(30,0,200,0.4)"
+          />
+        </g>
+      </svg>
+    </div>
+    <!--Waves end-->
+
+    <section id="footer"></section>
   </body>
 </html>
