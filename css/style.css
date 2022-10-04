@@ -36,7 +36,8 @@ a:hover {
   align-items: center;
   justify-content: center;
   justify-content: space-around;
-  margin-left: 20px;
+  margin-left: 0px;
+  margin-right: 20px;
 }
 
 #about {
@@ -174,4 +175,29 @@ body {
 ::selection {
   color: lightskyblue;
   background: darkblue;
+}
+
+@media only screen and (max-width: 600px) {
+  #about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin-left: 0;
+  }
+
+  #projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+  }
+
+  #about {
+    width: 100%;
+    display: block;
+  }
 }
