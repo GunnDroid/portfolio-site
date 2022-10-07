@@ -104,9 +104,8 @@ a:hover {
 
 #projects-text,
 #skills {
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
-  font-size: 30px;
 }
 
 #skills {
@@ -164,6 +163,7 @@ body {
   flex-wrap: nowrap;
   margin: 60px;
   height: 50px;
+  margin-bottom: 130px;
 }
 
 #headText {
