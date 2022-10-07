@@ -8,7 +8,9 @@
     <script src="/script.js" async></script>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/wavesstyle.css" />
-    <link rel="stylesheet" href="/css/button.css">
+
+    <!-- <link id="theme" rel="stylesheet" href="/css/lightDark.css"> -->
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,23 +20,18 @@
     />
   </head>
   <body>
-    <!-- <div class="console-container">
-      <span id="text"></span>
-      <div class="console-underscore" id="console">&#95;</div>
-    </div>
-  -->
+    <button onclick="myFunction()" id="lightDark">Dark Mode</button>
+
     <section id="header"></section>
     <p id="headText">welcome to my portfolio</p>
-    <!-- <button onclick="myFunction()" id="lightDark">Light/Dark</button> -->
-    <button id="button">
-      Dark Mode
-    </button>
+
+
 
     <section id="about-section">
       <div id="about-div">
         <h2>Who is Gunndroid?</h2>
         <p id="about">
-          <br>
+
           Gunnar is a programmer from the US. He stumbled into the abyss of
           writing code through his desire to understand Ethereum Smart
           Contracts.
@@ -62,8 +59,8 @@
         />
 
         <!-- contact email link -->
-        <a id="contact" href="mailto: glukari@protonmail.com">contact</a>
-        <a id="resume" href="/Gunndroid-resume.pdf" target="_blank">resume</a>
+        <a id="contact" class="links" href="mailto: glukari@protonmail.com">contact</a>
+        <a id="resume" class="links" href="/Gunndroid-resume.pdf" target="_blank">resume</a>
       </div>
     </section>
 

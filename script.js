@@ -1,22 +1,11 @@
-// Dark mode
+function myFunction() {
+  let element = document.body;
 
-// function myFunction() {
-//   let element = document.body;
-//   element.classList.toggle("dark-mode", "light-mode");
-// }
+  element.classList.toggle("dark-mode");
 
-// // Webpage starts light
-
-// function lightDark() {
-//   if (button === )
-// }
-
-let button = document.getElementById("button");
-button.onclick = function () {
-  document.body.classList.toggle("dark-mode");
-  if (document.body.classList.contains("dark-mode")) {
-    button.textContent = "Light Mode";
+  if (document.getElementById("lightDark").innerHTML === "Dark Mode") {
+    document.getElementById("lightDark").innerHTML = "Light Mode";
   } else {
-    button.textContent = "Dark Mode";
+    document.getElementById("lightDark").innerHTML = "Dark Mode";
   }
-};
+}

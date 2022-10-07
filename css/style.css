@@ -1,26 +1,23 @@
 /* light mode white BG, Black text, includes LINKS */
 body {
   font-size: 20px;
-  /* background-color: white;
-  color: black; */
+  background-color: white;
+  color: black;
   font-family: "Oxygen", sans-serif;
   max-width: 100%;
 }
-/* 
-.dark-mode {
-  background-color: rgba(5, 10, 40, 1);
-  color: white;
-} */
 
-/* button */
-/* #lightDark {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: grey;
-  border-radius: 10px;
+#lightDark {
+  position: fixed;
+  right: 20px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+.dark-mode {
+  background-color: black;
   color: white;
-} */
+}
 
 #contact {
   display: block;
@@ -38,9 +35,9 @@ body {
   margin: 5px;
 }
 
-/* a:hover {
-  color: purple;
-} */
+.links:hover {
+  color: blue;
+}
 
 #about-section {
   display: flex;
@@ -77,12 +74,12 @@ body {
 }
 
 /* .project-images:hover {
-  filter: saturate();
-} */
+    filter: saturate();
+  } */
 
 /* #portrait:hover {
-  filter: saturate();
-} */
+    filter: saturate();
+  } */
 
 #projects {
   display: flex;
@@ -139,9 +136,9 @@ body {
 }
 
 /* @import url(https://fonts.googleapis.com/css?family=Khula:700);
-body {
-  background: #111;
-} */
+  body {
+    background: #111;
+  } */
 .hidden {
   opacity: 0;
 }
@@ -157,10 +154,10 @@ body {
   /* color: white; */
   margin: 40px;
   /* top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; */
 }
 .console-underscore {
   display: inline-block;
