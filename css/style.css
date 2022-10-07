@@ -1,10 +1,26 @@
+/* light mode white BG, Black text, includes LINKS */
 body {
   font-size: 20px;
-  background-color: rgba(5, 10, 40, 1);
-  color: white;
+  /* background-color: white;
+  color: black; */
   font-family: "Oxygen", sans-serif;
   max-width: 100%;
 }
+/* 
+.dark-mode {
+  background-color: rgba(5, 10, 40, 1);
+  color: white;
+} */
+
+/* button */
+/* #lightDark {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: grey;
+  border-radius: 10px;
+  color: white;
+} */
 
 #contact {
   display: block;
@@ -22,13 +38,9 @@ body {
   margin: 5px;
 }
 
-a {
-  color: white;
-}
-
-a:hover {
+/* a:hover {
   color: purple;
-}
+} */
 
 #about-section {
   display: flex;
@@ -169,7 +181,8 @@ body {
 #headText {
   text-align: center;
   font-size: 14px;
-  margin: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 ::selection {
