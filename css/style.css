@@ -1,11 +1,62 @@
+/* light mode white BG, Black text, includes LINKS */
 body {
   font-size: 20px;
-  background-color: rgba(5, 10, 40, 1);
-  color: white;
+  background-color: white;
+  color: black;
   font-family: "Oxygen", sans-serif;
   max-width: 100%;
 }
 
+.links {
+  color: black;
+}
+
+/* dark mode */
+.dark-mode {
+  background-color: rgb(1, 2, 55);
+  color: white;
+}
+
+.dark-mode a {
+  color: white;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+#lightDark {
+  position: fixed;
+  right: 20px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+/* Portrait Photo */
+#portrait {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  filter: grayscale();
+}
+
+.dark-mode .portrait {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  filter: grayscale();
+}
+
+/* Contact Links */
 #contact {
   display: block;
   position: relative;
@@ -22,14 +73,7 @@ body {
   margin: 5px;
 }
 
-a {
-  color: white;
-}
-
-a:hover {
-  color: purple;
-}
-
+/* About info text */
 #about-section {
   display: flex;
   flex-direction: row;
@@ -52,26 +96,6 @@ a:hover {
   margin: 30px;
 }
 
-#portrait {
-  display: inline-block;
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border: 2px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 10px;
-  filter: grayscale();
-}
-
-/* .project-images:hover {
-  filter: saturate();
-} */
-
-/* #portrait:hover {
-  filter: saturate();
-} */
-
 #projects {
   display: flex;
   flex-direction: row;
@@ -82,6 +106,15 @@ a:hover {
 }
 
 .project-images {
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  min-width: none;
+  max-width: 90%;
+}
+
+.dark-mode .project-images {
   border: 2px;
   border-style: solid;
   border-color: white;
@@ -102,6 +135,10 @@ a:hover {
   font-size: 16px;
 }
 
+.project-text {
+  margin: 30px;
+}
+
 #projects-text,
 #skills {
   margin-top: 100px;
@@ -116,47 +153,6 @@ a:hover {
   justify-content: center;
 }
 
-.project-text {
-  margin: 30px;
-}
-
-#footer {
-  display: block;
-  text-align: center;
-  height: 40px;
-}
-
-/* @import url(https://fonts.googleapis.com/css?family=Khula:700);
-body {
-  background: #111;
-} */
-.hidden {
-  opacity: 0;
-}
-.console-container {
-  font-family: Khula;
-  /* font-size: 2em; */
-  font-size: 25px;
-  text-align: center;
-  height: fit-content;
-  width: fit-content;
-  display: block;
-  /* position: absolute; */
-  /* color: white; */
-  margin: 40px;
-  /* top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto; */
-}
-.console-underscore {
-  display: inline-block;
-  position: relative;
-  top: -0.14em;
-  left: 10px;
-}
-
 #icons {
   display: flex;
   flex-direction: row;
@@ -166,17 +162,27 @@ body {
   height: 50px;
 }
 
+#footer {
+  display: block;
+  text-align: center;
+  height: 40px;
+}
+
 #headText {
   text-align: center;
   font-size: 14px;
-  margin: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
+
+/* text selection color */
 
 ::selection {
   color: lightskyblue;
   background: darkblue;
 }
 
+/* For vertical, mobile screen sizes */
 @media only screen and (max-width: 600px) {
   #about-section {
     display: flex;
