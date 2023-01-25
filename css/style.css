@@ -11,7 +11,7 @@
 /* light mode white BG, Black text, includes LINKS */
 body {
   font-size: 20px;
-  background-color: white;
+  background-color: rgb(180, 186, 181);
   color: black;
   font-family: "Oxygen", sans-serif;
   max-width: 100%;
@@ -23,7 +23,7 @@ body {
 
 /* dark mode */
 .dark-mode {
-  background-color: rgb(1, 2, 55);
+  background-color: rgb(12, 13, 24);
   color: white;
 }
 
@@ -101,17 +101,14 @@ a:hover {
 #about-div {
   display: flex;
   flex-direction: column;
-  text-align: justify;
+  /* text-align: justify; */
   margin: 30px;
 }
 
 #projects {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   text-align: center;
-  margin: 50px;
 }
 
 .project-images {
@@ -120,7 +117,8 @@ a:hover {
   border-color: black;
   border-radius: 10px;
   min-width: none;
-  max-width: 90%;
+  /* max-width: 90%; */
+  max-width: 80%;
 }
 
 .dark-mode .project-images {
@@ -129,12 +127,13 @@ a:hover {
   border-color: white;
   border-radius: 10px;
   min-width: none;
-  max-width: 90%;
+  /* max-width: 90%; */
 }
 
 #whale,
 #sleep,
-#puffwizz {
+#puffwizz,
+#randomColor {
   margin: 20px;
   justify-content: center;
   align-items: center;

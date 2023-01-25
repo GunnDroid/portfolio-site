@@ -5,12 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gunndroid Programming</title>
-    <script src="/script.js" async></script>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/wavesstyle.css" />
-
-    <!-- <link id="theme" rel="stylesheet" href="/css/lightDark.css"> -->
-
+    <script src="/portfolio-site/script.js" async></script>
+    <link rel="stylesheet" href="/portfolio-site/css/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,6 +14,9 @@
       href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <script src="/portfolio-site/script.js" async></script>
+
   </head>
   <body>
     <button onclick="myFunction()" id="lightDark">Dark Mode</button>
@@ -29,21 +28,23 @@
 
     <section id="about-section">
       <div id="about-div">
-        <h2>Who is Gunndroid?</h2>
+        <h2>Who is Gunn Lukari?</h2>
         <p id="about">
 
-          Gunnar is a programmer from the US. He stumbled into the abyss of
-          writing code through his desire to understand Ethereum Smart
-          Contracts.
+          Gunnar is a highly skilled programmer hailing from the United States. 
+          He discovered a passion for programming through his interest in Ethereum Smart Contracts. 
+          With a strong desire to understand the intricacies of code, he set out on a journey to master the craft.
           <br />
           <br />
-          Earlier this year he arrived at the base of the programming mountain,
-          looked up and began to climb. The steps of HTML, CSS, Javascript, GIT
-          and others were thoroughly approached.
+          Over the years, Gunnar diligently climbed the programming mountain, 
+          mastering the fundamental building blocks of HTML, CSS, Tailwind, Javascript, React, GIT, Wordpress
+          and other essential technologies. 
+          He completed several intermediate-level online courses to further enhance his skills and knowledge.
           <br />
           <br />
-          After completing various intermediate online courses, he's ready to
-          meet at base camp and contribute to the programming world.
+          Gunnar is eager to contribute to the programming community 
+          and make a meaningful impact in the field. 
+          He is well-prepared and ready to meet the challenges that lie ahead.
           <br />
           <br />
         </p>
@@ -53,19 +54,18 @@
         <img
           id="portrait"
           class="portrait"
-          src="/images/gunndroid-4.png"
+          src="/portfolio-site/images/gunnLukariAI.JPG"
          
           alt="This is a portrait of Gunndroid."
         />
 
-        <!-- onmouseover="this.src='/images/qr.png'"
-        onmouseout="this.src='/images/gunndroid-4.png'" -->
-
         <!-- contact email link -->
-        <a id="contact" class="links" href="mailto: glukari@protonmail.com">contact</a>
-        <a id="resume" class="links" href="/Gunndroid-resume-edit.pdf" target="_blank">resume</a>
-        <a id="github" class="links" href="https://github.com/Gunndroid?tab=repositories" target="_blank">github</a>
 
+        <a id="contact" class="links" href="mailto: glukari@protonmail.com">contact</a>
+        <a id="resume" class="links" href="/portfolio-site/gunnar-curry-resume-2023.pdf" target="_blank">resume</a>
+
+
+        <a id="github" class="links" href="https://github.com/Gunndroid?tab=repositories" target="_blank">github</a>
       </div>
     </section>
 
@@ -73,21 +73,22 @@
     <section id="skills-section">
       <h3 id="skills">Skills</h3>
       <div id="icons">
-        <img src="/images/icons/vscode.png" alt="Visual Studio code icon" />
+        <img src="/portfolio-site/images/icons/vscode.png" alt="Visual Studio code icon" />
 
-        <img src="/images/icons/html3.png" alt="html icon"/>
-        <img src="/images/icons/css4.png" alt="css icon" />
-        <img src="/images/icons/sass2.png" alt="sass icon" />
+        <img src="/portfolio-site/images/icons/html3.png" alt="html icon"/>
+        <img src="/portfolio-site/images/icons/css4.png" alt="css icon" />
+        <img src="/portfolio-site/images/icons/sass2.png" alt="sass icon" />
 
-        <img src="/images/icons/js.png" alt="javascript icon" />
-        <img src="/images/icons/react.png" alt="react icon"
+        <img src="/portfolio-site/images/icons/js.png" alt="javascript icon" />
+        <img src="/portfolio-site/images/icons/react.png" alt="react icon"
 
-        <img src="/images/icons/node.png" alt="node.js icon" />
+        <img src="/portfolio-site/images/icons/node.png" alt="node.js icon" />
 
-        <img src="/images/icons/git.png" alt="git icon" />
-        <img src="/images/icons/github.png" alt="github icon" />
+        <img src="/portfolio-site/images/icons/git.png" alt="git icon" />
+        <img src="/portfolio-site/images/icons/github.png" alt="github icon" />
       </div>
     </section>
+    
 
     <section id="projects-box">
       <h3 id="projects-text">Programming Projects</h3>
@@ -99,7 +100,7 @@
             href="https://gunndroid.github.io/Human-to-Whale-Talk/"
             target="_blank"
           >
-            <img class="project-images" src="/images/whale.png"
+            <img class="project-images" src="/portfolio-site/images/whale.png"
           /></a>
           <p class="project-desc">
             This app will translate English into Whale Speech.
@@ -115,7 +116,7 @@
           <a
             href="https://gunndroid.github.io/sleepDebtCalculator/"
             target="_blank"
-            ><img class="project-images" src="/images/sleep.png"
+            ><img class="project-images" src="/portfolio-site/images/sleep.png"
           /></a>
           <p class="project-desc">
             This will calculate if you need more sleep each week.
@@ -124,13 +125,29 @@
           </p>
         </div>
 
+        <div id="randomColor">
+          <p class="project-text">Color Randomizer</p>
+          <a
+            href="https://gunndroid.github.io/random_color/"
+            target="_blank"
+            ><img class="project-images" src="/portfolio-site/images/random_color.png"
+          /></a>
+          <p class="project-desc">
+            This app generates a random RGB color.
+            <br />
+            <i>(React)</i>
+          </p>
+        </div>
+
+
+
         <div id="puffwizz">
           <p class="project-text">NFT Landing Page</p>
           <a
             style="pointer-events: none"
             href="https://gunndroid.github.io/puffwizz/"
             target="_blank"
-            ><img class="project-images" src="/images/puffwizz.png"
+            ><img class="project-images" src="/portfolio-site/images/puffwizz.png"
           /></a>
           <p class="project-desc">
             This is the NFT project that started my coding journey.
@@ -138,92 +155,10 @@
             <i>(React, in progress)</i>
           </p>
         </div>
+
       </div>
     </section>
 
-
-    <!--Waves Container-->
-    <div id="wavesDiv">
-      <svg
-        class="waves"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28"
-        preserveAspectRatio="none"
-        shape-rendering="auto"
-      >
-        <defs>
-          <path
-            id="gentle-wave"
-            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-          />
-        </defs>
-        <g class="parallax">
-          <use
-            xlink:href="#gentle-wave"
-            x="48"
-            y="0"
-            fill="rgba(0,100,250,0.4)"
-          />
-          <use
-            xlink:href="#gentle-wave"
-            x="48"
-            y="3"
-            fill="rgba(30,0,200,0.3)"
-          />
-          <use
-            xlink:href="#gentle-wave"
-            x="48"
-            y="5"
-            fill="rgba(100,0,200,0.4)"
-          />
-        </g>
-      </svg>
-    </div>
-    <!--Waves end-->
-
-    <!--Waves Container 2-->
-    <div id="wavesDiv2">
-      <svg
-        class="waves2"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28"
-        preserveAspectRatio="none"
-        shape-rendering="auto"
-      >
-        <defs>
-          <path
-            id="gentle-wave"
-            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-          />
-        </defs>
-        <g class="parallax">
-          <use
-            xlink:href="#gentle-wave"
-            x="48"
-            y="0"
-            fill="rgba(0,100,250,0.3)"
-          />
-          <use
-            xlink:href="#gentle-wave"
-            x="48"
-            y="3"
-            fill="rgba(100,0,200,0.4)"
-          />
-          <use
-            xlink:href="#gentle-wave"
-            x="48"
-            y="5"
-            fill="rgba(30,0,200,0.4)"
-          />
-        </g>
-      </svg>
-    </div>
-    <!--Waves end-->
-
-    <section id="footer">
-      <!-- <p>Made with in Chicago</p> -->
-    </section>
+    <section id="footer"></section>
   </body>
 </html>

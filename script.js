@@ -9,4 +9,6 @@ function myFunction() {
   } else {
     document.getElementById("lightDark").innerHTML = "Dark Mode";
   }
+
+  console.log(element);
 }
