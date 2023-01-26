@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+/* @layer components {
   .btn-primary {
     @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
   }
-}
+} */
 
 /* light mode white BG, Black text, includes LINKS */
 body {
@@ -186,8 +186,8 @@ a:hover {
 /* text selection color */
 
 ::selection {
-  color: lightskyblue;
-  background: darkblue;
+  color: rgb(113, 150, 93);
+  background: rgb(71, 91, 69);
 }
 
 /* For vertical, mobile screen sizes */
